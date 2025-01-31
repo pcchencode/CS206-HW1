@@ -24,11 +24,11 @@ def main():
 
     # Process each line from the input file
     for line in inputs:
-        print("====================================================")
+        # print("====================================================")
         sentence = line.strip()  # Remove any surrounding whitespace
         result = capitalize(sentence)  # Call the capitalize function
-        print(f"Input: {sentence} -> Output: {result}")
-        print("++++++++++++++++++++++++++++++++++++++++++++++++++++")
+        # print(f"Input: {sentence} -> Output: {result}")
+        # print("++++++++++++++++++++++++++++++++++++++++++++++++++++")
         # Analyze coverage data for capitalize.py
         # print("\nCoverage analysis for capitalize.py:")
         data = cov.get_data()
@@ -43,7 +43,7 @@ def main():
                 for i, content in enumerate(lines, start=1):
                     marker = " " if executed_lines and i in executed_lines else "#"
                     print(f"{marker} {i:2d} {content.strip()}")
-        print("====================================================")
+        # print("====================================================")
     # Stop and save the coverage data
     cov.stop()
     cov.save()

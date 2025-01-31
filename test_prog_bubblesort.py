@@ -29,7 +29,7 @@ def main():
 
     # Process each line from the input file
     for line in inputs:
-        print("====================================================")
+        # print("====================================================")
         try:
             collection = json.loads(line.strip())  # Parse JSON into Python list
             if not isinstance(collection, list):
@@ -39,8 +39,8 @@ def main():
             continue
         input_collections = collection.copy()
         result = bubble_sort_recursive(collection)  # Call the bubble_sort_recursive function
-        print(f"Input: {input_collections} -> Output: {result}")
-        print("++++++++++++++++++++++++++++++++++++++++++++++++++++")
+        # print(f"Input: {input_collections} -> Output: {result}")
+        # print("++++++++++++++++++++++++++++++++++++++++++++++++++++")
         
         # Analyze coverage data for bubblesort_recursive.py
         data = cov.get_data()
@@ -55,7 +55,7 @@ def main():
                 for i, content in enumerate(lines, start=1):
                     marker = " " if executed_lines and i in executed_lines else "#"
                     print(f"{marker} {i:2d} {content.strip()}")
-        print("====================================================")
+        # print("====================================================")
 
     # Stop and save the coverage data
     cov.stop()
