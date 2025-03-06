@@ -21,9 +21,19 @@ or
 pip3 install -r requirements.txt
 ```
 
-### Test Programms
-    * `test_prog_capitalize.py`: testing program for `capitalize.py`
-    * `test_prog_bubblesort.py`: testing program for `bubblesort_recursive.py`
+### Test Programm `test_prog_program.py`
+Usage
+```Bash
+python test_prog_program.py {your_python_script.py} {inputs.txt}
+```
+For example
+```Bash
+# Test capitalize.py with inputs inputs_capitalize.txt
+python test_prog_program.py capitalize.py inputs_capitalize.txt
+
+# Test bubblesort_recursive.py with inputs inputs_bubblesort.txt
+python test_prog_program.py bubblesort_recursive.py inputs_bubblesort.txt
+```
 
 ---
 ### RUN
